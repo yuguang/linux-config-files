@@ -1,4 +1,5 @@
 x11-wm/enlightenment enlightenment_modules_shot -enlightenment_modules_illume2 -enlightenment_modules_battery -enlightenment_modules_backlight -pam
+app-emulation/wine mp3 png truetype nls opengl udisks xcomposite ssl mono
 media-sound/asunder flac mp3
 # required by app-benchmarks/phoronix-test-suite-4.6.1
 # required by phoronix-test-suite (argument)
@@ -49,3 +50,6 @@ x11-base/xorg-server udev
 # required by @selected
 # required by @world (argument)
 >=dev-libs/ecore-1.7.9_pre2 curl
+# required by app-emulation/wine-1.6[amd64,opengl,abi_x86_32]
+# required by =app-emulation/wine-1.6 (argument)
+>=app-emulation/emul-linux-x86-opengl-20131008 development

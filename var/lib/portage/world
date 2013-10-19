@@ -1,8 +1,11 @@
 app-admin/keepassx
 app-admin/metalog
+app-arch/xarchiver
 app-cdr/cdrkit
 app-editors/vim
 app-emulation/virtualbox
+app-emulation/wine
+app-emulation/winetricks
 app-misc/mc
 app-misc/screen
 app-office/abiword
@@ -23,7 +26,9 @@ dev-libs/ppl
 dev-python/dreampie
 dev-vcs/git
 media-fonts/dejavu
+media-fonts/liberation-fonts
 media-fonts/ttf-bitstream-vera
+media-sound/exaile
 net-im/skype
 net-irc/irssi
 net-libs/nodejs
@@ -41,6 +46,7 @@ sys-devel/bc
 sys-devel/gcc
 sys-devel/llvm
 sys-fs/btrfs-progs
+sys-fs/ntfs3g
 sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 sys-kernel/ck-sources
