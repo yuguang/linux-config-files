@@ -12,7 +12,8 @@
 /dev/sdb1		/boot		btrfs		noatime,compress=zlib,ssd	1 2
 /dev/sdb3		/home		btrfs		noatime,compress=zlib,ssd	0 1
 /dev/sdb2		/		btrfs		noatime,compress=zlib,ssd	0 1
-/dev/sda7		/mnt/sabayon/boot	btrfs	compress=lzo,ssd	0 1
-#/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+#/dev/sda7		/mnt/sabayon/boot	btrfs	compress=lzo,ssd	0 1
+/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
 tmp     /tmp      tmpfs rw,mode=1777 0 0
 vartmp  /var/tmp  tmpfs rw,mode=1777 0 0 
+#/dev/sda12              /mnt/media              ntfs-3g noatime         0 0
