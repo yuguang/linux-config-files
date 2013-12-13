@@ -1,4 +1,5 @@
-x11-wm/enlightenment enlightenment_modules_shot -enlightenment_modules_illume2 -enlightenment_modules_battery -enlightenment_modules_backlight -pam
+media-sound/cmus flac mp4
+x11-wm/enlightenment enlightenment_modules_shot -enlightenment_modules_illume2 -enlightenment_modules_battery -enlightenment_modules_backlight
 app-emulation/wine mp3 png truetype nls opengl udisks xcomposite ssl mono
 media-sound/asunder flac mp3
 # required by app-benchmarks/phoronix-test-suite-4.6.1

@@ -2,6 +2,7 @@ app-admin/keepassx
 app-admin/metalog
 app-arch/xarchiver
 app-cdr/cdrkit
+app-editors/leafpad
 app-editors/vim
 app-emulation/virtualbox
 app-emulation/wine
@@ -24,11 +25,12 @@ dev-libs/cloog
 dev-libs/cloog-ppl
 dev-libs/ppl
 dev-python/dreampie
+dev-python/pygobject
 dev-vcs/git
 media-fonts/dejavu
 media-fonts/liberation-fonts
 media-fonts/ttf-bitstream-vera
-media-sound/exaile
+media-sound/cmus
 net-im/skype
 net-irc/irssi
 net-libs/nodejs
@@ -47,7 +49,6 @@ sys-devel/gcc
 sys-devel/llvm
 sys-fs/btrfs-progs
 sys-fs/ntfs3g
-sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 sys-kernel/ck-sources
 sys-process/fcron
@@ -58,7 +59,6 @@ www-plugins/adobe-flash
 x11-apps/xinit
 x11-apps/xrandr
 x11-base/xorg-server
-x11-drivers/radeon-ucode
 x11-misc/xclip
 x11-terms/terminology
 x11-terms/xterm
