@@ -1,0 +1,37 @@
+Available fontconfig .conf files (* is enabled):
+  [1]   10-autohint.conf
+  [2]   10-no-sub-pixel.conf
+  [3]   10-scale-bitmap-fonts.conf *
+  [4]   10-sub-pixel-bgr.conf
+  [5]   10-sub-pixel-rgb.conf *
+  [6]   10-sub-pixel-vbgr.conf
+  [7]   10-sub-pixel-vrgb.conf
+  [8]   10-unhinted.conf
+  [9]   11-lcdfilter-default.conf *
+  [10]  11-lcdfilter-legacy.conf
+  [11]  11-lcdfilter-light.conf
+  [12]  20-unhint-small-dejavu-sans-mono.conf
+  [13]  20-unhint-small-dejavu-sans.conf
+  [14]  20-unhint-small-dejavu-serif.conf
+  [15]  20-unhint-small-vera.conf *
+  [16]  25-unhint-nonlatin.conf
+  [17]  30-metric-aliases.conf *
+  [18]  30-urw-aliases.conf *
+  [19]  40-nonlatin.conf *
+  [20]  45-latin.conf *
+  [21]  49-sansserif.conf *
+  [22]  50-user.conf *
+  [23]  51-local.conf *
+  [24]  57-dejavu-sans-mono.conf
+  [25]  57-dejavu-sans.conf
+  [26]  57-dejavu-serif.conf
+  [27]  60-latin.conf *
+  [28]  60-liberation.conf
+  [29]  65-fonts-persian.conf *
+  [30]  65-khmer.conf
+  [31]  65-nonlatin.conf *
+  [32]  69-unifont.conf *
+  [33]  70-no-bitmaps.conf
+  [34]  70-yes-bitmaps.conf
+  [35]  80-delicious.conf *
+  [36]  90-synthetic.conf *
