@@ -21,16 +21,16 @@ fi
 msql() {
     if [[ $1 == "--csv" ]]; then
         shift
-        ssh mini "cd /var/www/localhost/wsgi/eval-lab/master; echo \" COPY ( $@ ) TO STDOUT  WITH CSV HEADER \" | ./manage.py dbshell "
+        ssh cube "cd /var/www/localhost/wsgi/eval-lab/master; echo \" COPY ( $@ ) TO STDOUT  WITH CSV HEADER \" | ./manage.py dbshell "
     else
-        ssh mini "cd /var/www/localhost/wsgi/eval-lab/master; echo \" $@ \" | ./manage.py dbshell "
+        ssh cube "cd /var/www/localhost/wsgi/eval-lab/master; echo \" $@ \" | ./manage.py dbshell "
     fi
 }
 
-minitunnel() {
+tunnel() {
 
     read -r -d '' HELP <<EOF
-Usage: minitunnel [options] hostname
+Usage: cubetunnel [options] hostname
 
 Create a tunnel to, and ssh into a given hostname that's hooked up to
 DataMill.
@@ -76,21 +76,21 @@ EOF
     local port_bits=$(printf "%0*d\n" 2 ${target_ip##*.})
     
 
-    if pgrep -f "ssh.*${target_ip}.*mini"; then
+    if pgrep -f "ssh.*${target_ip}.*cube"; then
 
         echo "Old tunnel found..."
  
         if [[ $kill_old_tunnel == "true" ]]; then
             echo "Killing old tunnel..."
-            pkill -f "ssh.*${target_ip}.*mini"
-            ssh -f -N -L 30${port_bits}:${target_ip}:22 mini
+            pkill -f "ssh.*${target_ip}.*cube"
+            ssh -f -N -L 30${port_bits}:${target_ip}:22 cube
         else
             echo "Using old tunnel..."
         fi
 
     else
         echo "Creating tunnel..."
-        ssh -f -N -L 30${port_bits}:${target_ip}:22 mini
+        ssh -f -N -L 30${port_bits}:${target_ip}:22 cube
     fi
     
     ssh -p 30${port_bits} root@localhost
