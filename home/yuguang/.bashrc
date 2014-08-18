@@ -96,3 +96,7 @@ EOF
     ssh -p 30${port_bits} root@localhost
 
 }
+removekey () {
+    line=$1
+    sed -i "${line}d" ~/.ssh/known_hosts
+}
