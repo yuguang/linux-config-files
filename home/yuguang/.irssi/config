@@ -96,7 +96,7 @@ chatnets = {
     max_whois = "30";
   };
   SILC = { type = "SILC"; };
-  Freenode = { type = "IRC"; nick = "yz"; };
+  Freenode = { type = "IRC"; nick = "yuguang"; };
 };
 
 channels = (
