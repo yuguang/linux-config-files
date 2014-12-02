@@ -1,0 +1,132 @@
+app-emulation/virtualbox -sdk extensions
+net-p2p/transmission gtk
+sys-devel/gcc lto graphite
+media-sound/cmus flac mp4
+x11-wm/enlightenment enlightenment_modules_shot -enlightenment_modules_illume2 -enlightenment_modules_battery -enlightenment_modules_backlight
+app-emulation/wine mp3 png truetype nls opengl udisks xcomposite ssl mono
+media-sound/asunder flac mp3
+gnome-extra/libgsf -introspection
+media-sound/pulseaudio dbus orc udev webrtc-aec
+dev-libs/efl sound
+sys-boot/grub truetype
+dev-java/oracle-jdk-bin nsplugin
+app-text/texlive doc dvi2tty dvipdfm png pstricks graphics science truetype
+<dev-lang/python-3.4.0 tk
+# dev-ruby/bundler ruby_targets_ruby19
+# required by app-text/evince-3.8.3
+# required by @selected
+# required by @world (argument)
+>=app-text/poppler-0.24.3 cairo
+# required by net-print/cups-1.6.4
+# required by net-print/cups-filters-1.0.36-r1
+=app-text/ghostscript-gpl-9.05-r1 cups
+# required by sys-power/upower-0.9.21
+# required by dev-libs/e_dbus-1.7.9[udev]
+# required by media-libs/ethumb-1.7.9[dbus]
+# required by x11-terms/terminology-0.4.0_alpha1
+# required by @selected
+# required by @world (argument)
+>=virtual/udev-208 gudev
+# required by virtual/udev-208
+# required by app-emulation/virtualbox-4.2.18
+# required by @selected
+# required by @world (argument)
+=sys-fs/udev-208 gudev
+# required by media-libs/mesa-9.1.6
+# required by app-emulation/emul-linux-x86-opengl-20131008
+# required by app-emulation/wine-1.6[opengl,abi_x86_32]
+# required by app-emulation/winetricks-20130707
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.9.1-r1 python icu
+# required by app-emulation/wine-1.6[opengl,abi_x86_32]
+# required by app-emulation/winetricks-20130707
+# required by @selected
+# required by @world (argument)
+>=app-emulation/emul-linux-x86-opengl-20131008 development
+# required by www-client/chromium-31.0.1650.63
+# required by @selected
+# required by @world (argument)
+=media-libs/harfbuzz-0.9.23 icu
+# required by sys-auth/polkit-0.112[-systemd]
+# required by sys-power/upower-0.9.21
+# required by dev-libs/e_dbus-1.7.9[udev]
+# required by media-libs/ethumb-1.7.9[dbus]
+# required by x11-terms/terminology-0.4.0_alpha1
+# required by @selected
+# required by @world (argument)
+>=sys-auth/consolekit-0.4.6 policykit
+# required by app-emulation/wine-1.6[xml,udisks,abi_x86_32]
+# required by app-emulation/winetricks-20130707
+# required by @selected
+# required by @world (argument)
+>=app-emulation/emul-linux-x86-baselibs-20131008-r6 development
+# required by net-misc/connman-1.15[wifi]
+# required by dev-libs/e_dbus-1.7.9[connman]
+# required by media-libs/ethumb-1.7.9[dbus]
+# required by x11-terms/terminology-0.4.0_alpha1
+# required by @selected
+# required by @world (argument)
+=net-wireless/wpa_supplicant-2.0-r2 dbus
+# required by www-client/chromium-31.0.1650.63
+# required by @selected
+# required by @world (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip
+# required by x11-wm/enlightenment-0.17.5[enlightenment_modules_shot]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/ecore-1.7.9 curl
+# required by app-emulation/wine-1.6[alsa,abi_x86_32]
+# required by app-emulation/winetricks-20130707
+# required by @selected
+# required by @world (argument)
+>=app-emulation/emul-linux-x86-soundlibs-20131008-r2 development
+# required by net-print/cups-1.7.1
+# required by net-print/cups-filters-1.0.43-r1
+=app-text/ghostscript-gpl-9.10-r2 cups
+# required by virtual/libgudev-208
+# required by sys-fs/udisks-1.0.5
+# required by dev-libs/e_dbus-1.7.9
+# required by media-libs/ethumb-1.7.9[dbus]
+# required by x11-terms/terminology-0.4.0_alpha1
+# required by @selected
+# required by @world (argument)
+=sys-fs/udev-215 gudev
+# required by sys-devel/prelink-20110511
+# required by app-emulation/wine-1.6.2[prelink]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/elfutils-0.158 static-libs
+# required by www-client/chromium-36.0.1985.125
+# required by @selected
+# required by @world (argument)
+=media-libs/harfbuzz-0.9.28 icu
+# required by virtual/libgudev-208
+# required by sys-power/upower-0.99.0-r1
+# required by dev-libs/e_dbus-1.7.9
+# required by x11-wm/enlightenment-0.17.5
+# required by @selected
+# required by @world (argument)
+=sys-fs/udev-215-r1 gudev
+# required by app-i18n/ibus-table-1.2.0.20100111
+# required by app-i18n/ibus-table-chinese-1.4.6
+# required by ibus-table-chinese (argument)
+=dev-lang/python-2.7.6 sqlite
+# required by virtual/libgudev-215-r1[-systemd]
+# required by sys-fs/udisks-1.0.5-r1
+# required by dev-libs/e_dbus-1.7.9
+# required by @selected
+# required by @world (argument)
+=sys-fs/udev-216 gudev
+# required by net-misc/connman-1.21[wifi]
+# required by dev-libs/e_dbus-1.7.9
+# required by @selected
+# required by @world (argument)
+=net-wireless/wpa_supplicant-2.2-r1 dbus
+# required by media-gfx/graphviz-2.26.3-r4
+# required by media-gfx/pydot-1.0.28-r1
+# required by dev-tex/dot2tex-2.8.7
+# required by dev-tex/dot2texi-3.0
+# required by app-text/texlive-2012[graphics]
+# required by app-text/texlive (argument)
+>=media-libs/gd-2.0.35-r4 jpeg truetype png fontconfig
