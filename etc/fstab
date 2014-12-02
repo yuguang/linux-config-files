@@ -16,4 +16,5 @@
 #/dev/sr0		/mnt/cdrom	auto		noauto,ro	0 0
 tmp     /tmp      tmpfs rw,mode=1777 0 0
 vartmp  /var/tmp  tmpfs rw,mode=1777 0 0 
+#/dev/sda11		none		swap		sw		0 0
 /dev/sda12              /mnt/media              ntfs-3g noatime         0 0
