@@ -7,3 +7,4 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
     eval `ssh-agent -s`
     ssh-add
 fi
+[[ $(tty) = "/dev/tty1" ]] && exec startx
