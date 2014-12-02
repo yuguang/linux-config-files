@@ -17,7 +17,9 @@ fi
 
 # Put your fun stuff here.
 #alias ssh_start='for i in {10..59}; do ssh -f -N -L 30$i:10.10.10.$i:22 root@datamill.uwaterloo.ca; done; for i in {3..9}; do ssh -f -N -L 300$i:10.10.10.$i:22 root@datamill.uwaterloo.ca; done'
-
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
 msql() {
     if [[ $1 == "--csv" ]]; then
         shift
