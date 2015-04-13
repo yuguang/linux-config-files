@@ -12,6 +12,14 @@ sys-boot/grub truetype
 dev-java/oracle-jdk-bin nsplugin
 app-text/texlive doc dvi2tty dvipdfm png pstricks graphics science truetype
 <dev-lang/python-3.4.0 tk
+# required by net-misc/networkmanager-0.9.8.10-r1[ppp]
+# required by networkmanager (argument)
+>=net-dialup/ppp-2.4.7 ipv6
+# required by gnome-base/gnome-keyring-3.12.2-r1
+# required by app-crypt/libsecret-0.18
+# required by gnome-extra/nm-applet-0.9.8.10-r1
+# required by nm-applet (argument)
+>=app-crypt/gcr-3.12.2 gtk
 # dev-ruby/bundler ruby_targets_ruby19
 # required by app-text/evince-3.8.3
 # required by @selected
@@ -130,3 +138,22 @@ app-text/texlive doc dvi2tty dvipdfm png pstricks graphics science truetype
 # required by app-text/texlive-2012[graphics]
 # required by app-text/texlive (argument)
 >=media-libs/gd-2.0.35-r4 jpeg truetype png fontconfig
+# required by virtual/libgudev-215-r1[-systemd]
+# required by sys-power/upower-0.99.1
+# required by dev-libs/e_dbus-1.7.9
+# required by @selected
+# required by @world (argument)
+=sys-fs/eudev-1.10-r2 gudev
+# required by x11-libs/glamor-0.6.0
+# required by @preserved-rebuild (argument)
+=media-libs/mesa-10.0.4 gbm
+# required by dev-java/netbeans-platform-7.2
+# required by dev-java/netbeans-javafx-7.2
+# required by dev-util/netbeans-7.2[netbeans_modules_javafx]
+# required by netbeans (argument)
+>=dev-java/swing-layout-1.0.4 source
+# required by dev-java/netbeans-ide-7.2-r1
+# required by dev-java/netbeans-javafx-7.2
+# required by dev-util/netbeans-7.2[netbeans_modules_javafx]
+# required by netbeans (argument)
+>=dev-vcs/subversion-1.8.11 java

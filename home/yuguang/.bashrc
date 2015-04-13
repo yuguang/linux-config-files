@@ -85,17 +85,20 @@ EOF
         if [[ $kill_old_tunnel == "true" ]]; then
             echo "Killing old tunnel..."
             pkill -f "ssh.*${target_ip}.*cube"
-            ssh -f -N -L 30${port_bits}:${target_ip}:22 cube
         else
             echo "Using old tunnel..."
         fi
 
     else
         echo "Creating tunnel..."
-        ssh -f -N -L 30${port_bits}:${target_ip}:22 cube
     fi
-    
-    ssh -p 30${port_bits} root@localhost
+    if [[ $target_ip == 192* ]]; then
+       ssh -f -N -L 3${port_bits}:${target_ip}:22 lava
+       ssh -p 3${port_bits} root@localhost
+    else
+       ssh -f -N -L 30${port_bits}:${target_ip}:22 cube
+       ssh -p 30${port_bits} root@localhost
+    fi
 
 }
 removekey () {
